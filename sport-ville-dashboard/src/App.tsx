@@ -1,15 +1,16 @@
-import Home from "./pages/home/Home"
-import './styles/globals.scss'
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import Users from "./pages/users/users";
-import Navbar from "./components/navbar/Navbar";
-import Footer from "./components/footer/Footer";
-import Menu from "./components/menu/Menu";
-import Login from "./pages/login/Login";
+import './app/styles/globals.scss'
+import Home from "./app/pages/home/Home";
+import Login from "./app/pages/login/Login";
+import Users from "./app/pages/users/users";
+
+import Navbar from "./app/components/navbar/Navbar";
+import Footer from "./app/components/footer/Footer";
+import Menu from "./app/components/menu/Menu";
 
 function App() {
 

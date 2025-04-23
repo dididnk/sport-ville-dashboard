@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import './menu.scss'
-import { menu } from './menu.ts'
+import { data } from './data.ts'
 
 function Menu() {
   return (
     <div className='menu'>
-      {menu.map((item) =>
+      {data.map((item) =>
         <div className="item" key={item.id}>
           <span className="title">{item.tittle}</span>
           {item.listItems.map((list) =>

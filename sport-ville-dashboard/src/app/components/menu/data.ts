@@ -1,4 +1,4 @@
-export const menu = [
+export const data = [
     {
         id: 1,
         tittle: "Principal",
