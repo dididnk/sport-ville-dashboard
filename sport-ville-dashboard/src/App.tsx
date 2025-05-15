@@ -3,7 +3,7 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import './app/styles/globals.scss'
+import './index.css'
 import Home from "./app/pages/home/Home";
 import Login from "./app/pages/login/Login";
 import Users from "./app/pages/users/users";

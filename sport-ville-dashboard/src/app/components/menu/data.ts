@@ -57,18 +57,6 @@ export const data = [
                 url: "/statistics",
                 icon: "globe.svg",
             },
-            {
-                id: 2,
-                title: "Android",
-                url: "/statistics/android",
-                icon: "android.svg",
-            },
-            {
-                id: 3,
-                title: "iOS",
-                url: "/statistics/ios",
-                icon: "ios.svg",
-            },
         ]
     }
 ]
