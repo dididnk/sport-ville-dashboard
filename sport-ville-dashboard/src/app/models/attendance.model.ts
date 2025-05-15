@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Timestamp } from 'firebase/firestore';
 
-export interface Attendance {
+export interface AttendanceModel {
   id: string;
   activityId: string;
   participants: string[];
@@ -10,7 +10,7 @@ export interface Attendance {
 }
 
 // 🔁 Convert Firestore data to local model
-export const attendanceFromFirestore = (data: any): Attendance => {
+export const attendanceFromFirestore = (data: any): AttendanceModel => {
   return {
     id: data.id,
     activityId: data.activityId,
@@ -27,7 +27,7 @@ export const attendanceFromFirestore = (data: any): Attendance => {
 };
 
 // 🔁 Convert local model to Firestore format
-export const attendanceToFirestore = (attendance: Attendance): any => {
+export const attendanceToFirestore = (attendance: AttendanceModel): any => {
   return {
     id: attendance.id,
     activityId: attendance.activityId,
@@ -39,9 +39,9 @@ export const attendanceToFirestore = (attendance: Attendance): any => {
 
 // ✨ Utility to copy and override values
 export const copyAttendance = (
-  attendance: Attendance,
-  overrides: Partial<Attendance>
-): Attendance => {
+  attendance: AttendanceModel,
+  overrides: Partial<AttendanceModel>
+): AttendanceModel => {
   return {
     ...attendance,
     ...overrides,

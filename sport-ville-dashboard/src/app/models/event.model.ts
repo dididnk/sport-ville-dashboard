@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Timestamp } from 'firebase/firestore';
 
-export interface Event {
+export interface EventModel {
   id: string;
   title: string;
   description: string;
@@ -17,7 +17,7 @@ export interface Event {
 }
 
 // 🔁 Convert Firestore data to local Event model
-export const eventFromFirestore = (data: any): Event => {
+export const eventFromFirestore = (data: any): EventModel => {
   return {
     id: data.id,
     title: data.title,
@@ -43,7 +43,7 @@ export const eventFromFirestore = (data: any): Event => {
 };
 
 // 🔁 Convert local Event model to Firestore format
-export const eventToFirestore = (event: Event): any => {
+export const eventToFirestore = (event: EventModel): any => {
   return {
     id: event.id,
     title: event.title,

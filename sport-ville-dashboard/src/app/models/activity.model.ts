@@ -2,15 +2,15 @@
 import { Timestamp } from 'firebase/firestore';
 import { ActivityStatusEnum } from '../enums/activity-status.enum';
 import { AddressModel } from './address.model';
-import { Price } from './price.model';
-import { Sport } from './sport.model';
+import { PriceModel } from './price.model';
+import { SportModel } from './sport.model';
 
 export interface ActivityTime {
   hour: number;
   minute: number;
 }
 
-export interface Activity {
+export interface ActivityModel {
   id: string;
   title: string;
   description: string;
@@ -23,17 +23,17 @@ export interface Activity {
   status: ActivityStatusEnum;
   createdAt: Timestamp | Date;
   updatedAt?: Timestamp | Date | null;
-  sport: Sport;
+  sport: SportModel;
   photoUrl?: string | null;
   moreInfo?: string | null;
-  price?: Price | null;
+  price?: PriceModel | null;
 }
 
 // Helper type for Firebase document data
-export type ActivityDocumentData = Omit<Activity, 'id'>;
+export type ActivityDocumentData = Omit<ActivityModel, 'id'>;
 
 // Helper functions for Firebase conversions
-export const activityToFirestore = (activity: Activity): ActivityDocumentData => {
+export const activityToFirestore = (activity: ActivityModel): ActivityDocumentData => {
   return {
     ...activity,
     date: activity.date instanceof Date ? Timestamp.fromDate(activity.date) : activity.date,
@@ -44,7 +44,7 @@ export const activityToFirestore = (activity: Activity): ActivityDocumentData =>
   };
 };
 
-export const activityFromFirestore = (id: string, data: any): Activity => {
+export const activityFromFirestore = (id: string, data: any): ActivityModel => {
   return {
     id,
     title: data.title,

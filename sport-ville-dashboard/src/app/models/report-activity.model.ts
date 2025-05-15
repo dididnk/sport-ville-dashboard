@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export interface ReportActivity {
+export interface ReportActivityModel {
   id: string;
   activityId: string;
   reporterUid: string;
@@ -8,7 +8,7 @@ export interface ReportActivity {
   reportedAt: Date;
 }
 
-export const reportActivityFromFirestore = (data: any): ReportActivity => {
+export const reportActivityFromFirestore = (data: any): ReportActivityModel => {
   return {
     id: data.id ?? '',
     activityId: data.activityId ?? '',
@@ -21,7 +21,7 @@ export const reportActivityFromFirestore = (data: any): ReportActivity => {
   };
 };
 
-export const reportActivityToFirestore = (report: ReportActivity): any => {
+export const reportActivityToFirestore = (report: ReportActivityModel): any => {
   return {
     id: report.id,
     activityId: report.activityId,

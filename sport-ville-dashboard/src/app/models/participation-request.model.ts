@@ -2,7 +2,7 @@
 import { Timestamp } from 'firebase/firestore';
 import { RequestStatusEnum, requestStatusFromValue } from '../enums/request-status.enum';
 
-export interface ParticipationRequest {
+export interface ParticipationRequestModel {
   id: string;
   activityId: string;
   requesterId: string;
@@ -13,7 +13,7 @@ export interface ParticipationRequest {
 }
 
 // 🔁 Firestore → Local Model
-export const participationRequestFromFirestore = (data: any): ParticipationRequest => {
+export const participationRequestFromFirestore = (data: any): ParticipationRequestModel => {
   const rawDate = data.requestDate;
 
   let parsedDate: Date;
@@ -37,7 +37,7 @@ export const participationRequestFromFirestore = (data: any): ParticipationReque
 };
 
 // 🔁 Local Model → Firestore
-export const participationRequestToFirestore = (request: ParticipationRequest): any => {
+export const participationRequestToFirestore = (request: ParticipationRequestModel): any => {
   return {
     id: request.id,
     activityId: request.activityId,

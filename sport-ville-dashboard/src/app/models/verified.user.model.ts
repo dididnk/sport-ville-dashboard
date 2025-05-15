@@ -25,7 +25,7 @@ export class VerifiedUserModel {
     this.verifiedAt = params.verifiedAt ?? null;
     this.documentUrl = params.documentUrl ?? null;
     this.verifiedBy = params.verifiedBy ?? null;
-    this.status = params.status ?? VerificationStatusEnum.none;
+    this.status = params.status ?? VerificationStatusEnum.None;
     this.specialField = params.specialField ?? null;
   }
 
