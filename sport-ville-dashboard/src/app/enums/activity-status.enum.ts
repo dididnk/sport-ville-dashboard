@@ -1,7 +1,7 @@
 export enum ActivityStatusEnum {
-    Pending,
-    Ongoing,
-    Completed,
-    Cancelled,
-    Deleted,
+    Pending = 0,
+    Ongoing = 1,
+    Completed = 2,
+    Cancelled = 3,
+    Deleted = 4,
 }

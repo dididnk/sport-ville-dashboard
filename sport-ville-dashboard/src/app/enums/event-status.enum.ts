@@ -1,6 +1,6 @@
 export enum EventStatusEnum {
-    Planned,
-    Ongoing,
-    Completed,
-    Cancelled,
+    Planned = 0,
+    Ongoing = 1,
+    Completed = 2,
+    Cancelled = 3,
 }
