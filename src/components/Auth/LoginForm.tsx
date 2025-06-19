@@ -63,7 +63,7 @@ const LoginForm: React.FC = () => {
                         <ShieldCheck className="h-12 w-12 text-indigo-600" />
                     </div>
                     <h2 className="mt-4 text-center text-3xl font-bold text-gray-900">
-                        Sport-Ville
+                        SportVille
                     </h2>
                     <p className="mt-2 text-center text-sm text-gray-600">
                         Connectez-vous pour accéder à votre portail d'administration

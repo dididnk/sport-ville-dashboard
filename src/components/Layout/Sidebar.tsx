@@ -49,7 +49,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPath, closeSidebar }) => {
                     onClick={closeSidebar}
                 >
                     <ShieldCheck className="w-7 h-7 mr-2" />
-                    <span>Sport-Ville</span>
+                    <span>SportVille</span>
                 </Link>
             </div>
 
