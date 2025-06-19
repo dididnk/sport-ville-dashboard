@@ -231,7 +231,7 @@ const UserForm: React.FC<UserFormProps> = ({
                     <div>
                         <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
                             <Shield className="h-4 w-4 inline mr-1" />
-                            Mot de passe {isEditing && <span className="text-gray-500">(leave blank to keep current)</span>}
+                            Mot de passe {isEditing && <span className="text-gray-500">(laisser en blanc pour rester à jour)</span>}
                         </label>
                         <div className="relative">
                             <input
