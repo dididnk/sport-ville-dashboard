@@ -63,10 +63,10 @@ const LoginForm: React.FC = () => {
                         <ShieldCheck className="h-12 w-12 text-indigo-600" />
                     </div>
                     <h2 className="mt-4 text-center text-3xl font-bold text-gray-900">
-                        Admin Dashboard
+                        Sport-Ville
                     </h2>
                     <p className="mt-2 text-center text-sm text-gray-600">
-                        Sign in to access your admin portal
+                        Connectez-vous pour accéder à votre portail d'administration
                     </p>
 
                     {authError && (
@@ -79,7 +79,7 @@ const LoginForm: React.FC = () => {
                         <div className="space-y-4">
                             <div>
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                                    Email address
+                                    Email
                                 </label>
                                 <div className="mt-1">
                                     <input
@@ -102,7 +102,7 @@ const LoginForm: React.FC = () => {
 
                             <div>
                                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
-                                    Password
+                                    Mot de passe
                                 </label>
                                 <div className="mt-1 relative">
                                     <input
@@ -144,13 +144,13 @@ const LoginForm: React.FC = () => {
                                     className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
                                 />
                                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
-                                    Remember me
+                                    Souvenez-vous de moi
                                 </label>
                             </div>
 
                             <div className="text-sm">
                                 <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                    Forgot your password?
+                                    Vous avez oublié votre mot de passe ?
                                 </a>
                             </div>
                         </div>
@@ -166,21 +166,21 @@ const LoginForm: React.FC = () => {
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <LogIn className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" />
                 </span>
-                                {isLoading ? 'Signing in...' : 'Sign in'}
+                                {isLoading ? 'En cours...' : 'S\'inscrire'}
                             </button>
                         </div>
 
                         <div className="text-sm text-center">
-                            <span className="text-gray-600">Don't have an account?</span>{' '}
+                            <span className="text-gray-600">Vous n'avez pas de compte ?</span>{' '}
                             <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                Request access
+                                Demande d'accès
                             </a>
                         </div>
                     </form>
 
                     <div className="mt-6">
                         <p className="text-xs text-center text-gray-500">
-                            For demo purposes, use: admin@example.com / admin123
+                            A des fins de démonstration, utilisez : admin@example.com / admin123
                         </p>
                     </div>
                 </div>
