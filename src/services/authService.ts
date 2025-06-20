@@ -22,8 +22,8 @@ export type LoginForm = z.infer<typeof loginSchema>;
 export type RegisterForm = z.infer<typeof registerSchema>;
 
 // Mock credentials for admin login
-const ADMIN_EMAIL = 'admin@example.com';
-const ADMIN_PASSWORD = 'admin123';
+const ADMIN_EMAIL = 'emmanuel.ngbame@sport-ville.fr';
+const ADMIN_PASSWORD = 'QWRtaW4uMTk5OQ==';
 
 // Mock authentication service
 export const authService = {

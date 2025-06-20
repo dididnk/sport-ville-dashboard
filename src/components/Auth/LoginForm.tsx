@@ -6,8 +6,8 @@ import { z } from 'zod';
 import { Eye, EyeOff, LogIn, ShieldCheck } from 'lucide-react';
 
 const LoginForm: React.FC = () => {
-    const [email, setEmail] = useState('admin@example.com');
-    const [password, setPassword] = useState('admin123');
+    const [email, setEmail] = useState('emmanuel.ngbame@sport-ville.fr');
+    const [password, setPassword] = useState('QWRtaW4uMTk5OQ==');
     const [showPassword, setShowPassword] = useState(false);
     const [errors, setErrors] = useState<Record<string, string>>({});
     const { login, isLoading, error: authError } = useAuth();
@@ -49,7 +49,7 @@ const LoginForm: React.FC = () => {
 
     // const handleDemoLogin = async (e: React.MouseEvent) => {
     //     e.preventDefault();
-    //     const success = await login('admin@example.com', 'admin123');
+    //     const success = await login('emmanuel.ngbame@sport-ville.fr', 'QWRtaW4uMTk5OQ==');
     //     if (success) {
     //         navigate('/dashboard');
     //     }
@@ -180,7 +180,7 @@ const LoginForm: React.FC = () => {
 
                     <div className="mt-6">
                         <p className="text-xs text-center text-gray-500">
-                            A des fins de démonstration, utilisez : admin@example.com / admin123
+                            A des fins de démonstration, utilisez : emmanuel.ngbame@sport-ville.fr / QWRtaW4uMTk5OQ==
                         </p>
                     </div>
                 </div>
